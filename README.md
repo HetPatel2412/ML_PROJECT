@@ -1,4 +1,4 @@
-# ML_PROJECT
+# ML_PROJECT- Car Price Predictor
 Project Made By Het Patel and Krish Dalsaniya
 
 ML_PROJECT/
