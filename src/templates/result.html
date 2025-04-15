@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        /* Gradient animated background */
+        body {
+            
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 50px;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* 3D effect box for the result card */
+        .card {
+            background: linear-gradient(145deg, #a1c4fd, #c2e9fb);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.4);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+            width: 50%;
+            margin: auto;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        h2 {
+            font-weight: bold;
+            text-shadow: 2px 2px #00000030;
+        }
+
+        .text-success {
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px #d2ffdc;
+        }
+
+        .btn-primary {
+            background-color: #17a2b8;
+            border: none;
+            transition: 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #138496;
+        }
+
+    </style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div class="card">
+        <h2 class="mb-4">🎉 Your Predicted Car Price</h2>
+        <pre>             <h3 class="text-success">₹ {{ predicted_price }} Lakhs</h3>         </pre>
+        <a href="/" class="btn btn-primary">Predict Again</a>
+    </div>
+
+
+
+</body>
+</html>
